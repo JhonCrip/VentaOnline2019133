@@ -1,0 +1,496 @@
+{
+	"info": {
+		"_postman_id": "14f88e41-7ca4-4596-9650-66c89fccc457",
+		"name": "Ventas Online",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Jonatan",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jvelasquez2019133",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/registrar",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ADMIN",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTZiMzcyMTJmMzJmNTQ0NzUxYzQiLCJub21icmUiOiJKYXZpZXIiLCJ1c2VybmFtZSI6ImphbmRyZXMyMDE5MTMwIiwicm9sIjoiUk9MX0NMSUVOVEUiLCJpYXQiOjE2MTU1ODcyMjcsImV4cCI6MTYxNjAxOTIyN30.wm4HwewtVEgbdr_lzQWHSAzZEwmGfXo7_0ZQHkJiwO0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Jonatan",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jvelasquez2019133",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/actUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"actUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "elimUser",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTZiMzcyMTJmMzJmNTQ0NzUxYzQiLCJub21icmUiOiJKYXZpZXIiLCJ1c2VybmFtZSI6ImphbmRyZXMyMDE5MTMwIiwicm9sIjoiUk9MX0NMSUVOVEUiLCJpYXQiOjE2MTU1ODcyMjcsImV4cCI6MTYxNjAxOTIyN30.wm4HwewtVEgbdr_lzQWHSAzZEwmGfXo7_0ZQHkJiwO0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "604be6b37212f32f544751c4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/elimUser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"elimUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearCategoria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Instrumentos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/crearCategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"crearCategoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "elimCategoria",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/elimCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"elimCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604be9017212f32f544751c6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actCategoria",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Repuestos",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/actCategoria/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"actCategoria",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604be8ec7212f32f544751c5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtCategoria",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Bocinas",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtCategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtCategoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "setProducto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Guitarra",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "1200",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "idCategoria",
+							"value": "604be6647212f32f544751c1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/setProducto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"setProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actProducto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Bajo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/actProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"actProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604beb7cb5178c2ce430a682"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "elimProducto",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDRiZTY2NDcyMTJmMzJmNTQ0NzUxYzAiLCJub21icmUiOiJBZG1pbmlzdHJhZG9yIiwidXNlcm5hbWUiOiJBZG1pbiIsInJvbCI6IlJPTF9BRE1JTiIsImlhdCI6MTYxNTU4NzQ5NiwiZXhwIjoxNjE2MDE5NDk2fQ.ih7d5LieDFpWv1XUtZaoAx9ydkzXJ015aenDuEfbdO4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/elimProducto/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"elimProducto",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "604beb7cb5178c2ce430a682"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Bateria",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/obtProducto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"obtProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productoAgotado",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cantidad",
+							"value": "Cuerdas",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/productoAgotado",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"productoAgotado"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
